@@ -1,16 +1,19 @@
 <template>
   <div id="app">
     <LoginForm title="Authentification" />
+    <SearchFilm />
   </div>
 </template>
 
 <script>
 import LoginForm from './components/LoginForm.vue';
+import SearchFilm from './components/SearchFilm.vue';
 
 export default {
   name: 'App',
   components: {
-    LoginForm
+    LoginForm,
+    SearchFilm
   }
 }
 </script>
