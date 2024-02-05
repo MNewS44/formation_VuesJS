@@ -30,8 +30,8 @@ export default {
     methods: {
         login() {
             this.$store.commit('login');
-            this.$router.push('/searchFilm');
-            // this.isLoggedIn = this.$store.state.isLoggedIn;
+            this.$router.push('/fetchFilms');
+            // this.$router.push('/searchFilm');
         }
     },
     computed: {

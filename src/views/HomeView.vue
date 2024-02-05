@@ -1,15 +1,15 @@
 <template>
-  <hello-world />
+  <LoginForm />
 </template>
 
 <script>
-import HelloWorld from '../components/HelloWorld'
+import LoginForm from '@/components/LoginForm.vue';
 
 export default {
   name: 'HomeView',
 
   components: {
-    HelloWorld,
-  },
+    LoginForm
+  }
 }
 </script>

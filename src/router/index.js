@@ -13,6 +13,16 @@ const routes = [
     component: HomeView
   },
   {
+    path: '/fetchFilms',
+    name: 'fetchFilms',
+    component: () => import(/* webpackChunkName: "about" */ '../components/FilmsForm.vue')
+  },
+  {
+    path: '/detailsFilm/:id',
+    name: 'detailsFilm',
+    component: () => import(/* webpackChunkName: "about" */ '../components/DetailsFilm.vue')
+  },
+  {
     path: '/searchFilm',
     name: 'search',
     // route level code-splitting
