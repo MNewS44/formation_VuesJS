@@ -6,7 +6,12 @@
             <button>Submit</button>
         </form>
         <div>
-            <p v-if="this.$store.state.filteredFilms.length > 0">{{ numberResults }} films trouvés</p>
+            <p v-if="this.$store.state.filteredFilms.length === 1">{{ this.$store.state.filteredFilms.length }} film
+                trouvé
+            </p>
+            <p v-else-if="this.$store.state.filteredFilms.length > 1">{{ this.$store.state.filteredFilms.length }} films
+                trouvés
+            </p>
         </div>
         <ul class="films">
             <li v-for="(item, index) in    filteredFilms   " :key="index" class="film card">
@@ -37,7 +42,7 @@ export default {
     name: 'SearchFilm',
     data() {
         return {
-            numberResults: this.$store.state.films.length,
+            // numberResults: this.$store.state.films.length,
             films: this.$store.state.films,
             //isLoggedIn: this.$store.state.isLoggedIn,
             input: ""

@@ -2,6 +2,7 @@ import Vue from 'vue'
 import VueRouter from 'vue-router'
 import HomeView from '../views/HomeView.vue'
 import ItemDetailVue from '@/components/ItemDetail.vue'
+import AxiosRequestVue from '@/components/AxiosRequest.vue'
 
 Vue.use(VueRouter)
 
@@ -22,6 +23,10 @@ const routes = [
   {
     path: '/item/:name',
     component: ItemDetailVue
+  },
+  {
+    path: '/axios',
+    component: AxiosRequestVue
   }
 
 ]

@@ -1,17 +1,15 @@
 <template>
-  <div class="home">
-    <LoginForm />
-  </div>
+  <hello-world />
 </template>
 
 <script>
-// @ is an alias to /src
-import LoginForm from '@/components/LoginForm.vue'
+import HelloWorld from '../components/HelloWorld'
 
 export default {
   name: 'HomeView',
+
   components: {
-    LoginForm
-  }
+    HelloWorld,
+  },
 }
 </script>
